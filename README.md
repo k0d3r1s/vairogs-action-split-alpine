@@ -19,7 +19,7 @@ jobs:
         id: branch
       - name: Split monorepo
         id: split
-        uses: docker://k0d3r1s/action:split--latest
+        uses: docker://k0d3r1s/action-alpine:split--latest
         env:
           BRANCH: ${{ steps.branch.outputs.branch }}
           REPO: ${{ github.repository }}
